@@ -5,7 +5,7 @@ pipeline {
   
   parameters {
 	choice(name: 'action', choices: 'create\nrollback', description: 'Create/rollback of the deployment')
-    string(name: 'ImageName', description: "Name of the docker build", defaultValue: " ")
+    string(name: 'ImageName', description: "Name of the docker build", defaultValue: "docker")
 	string(name: 'ImageTag', description: "Name of the docker build",defaultValue: "v1")
 	string(name: 'AppName', description: "Name of the Application",defaultValue: " ")
     string(name: 'docker_repo', description: "Name of docker repository",defaultValue: "bharanitallaplly")
